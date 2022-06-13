@@ -1,0 +1,183 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Modern','Helvética';
+}
+
+/*Inicio NavBar*/
+
+.nav {
+    height: 150px;
+    color: rgb(20, 205, 17);
+    display: inline-flex;
+    height: 100%;
+    width: 90%;
+    margin: 0%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_menu {
+    position: fixed;
+    top: 80px;
+    min-height: 100vh;
+    width: 22%;
+    right: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    position: absolute;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.nav_input:checked+.nav_menu {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+/*Fin navBar*/
+
+/*text-1*/
+p {
+    max-width: 75ch;
+}
+
+.landing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box-1 {
+    width: 40%;
+    padding-left: 40px;
+    padding-bottom: 0%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.text-box-1 h1 {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: #34bd34;
+}
+
+.linea {
+    text-decoration: underline;
+}
+
+.text-box-1 p {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.btn-text-box-1 {
+    width: 50%;
+}
+
+.hero-btn {
+    align-items: center;
+    display: flex;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #d0ddd7;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: green;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #7e846b;
+    background: transparent;
+    transition: 1s;
+    color: green;
+}
+
+.link-text-box-1 {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.link-text-box-1 :hover {
+    color: green;
+}
+
+/*fin de text-1*/
+
+/*--inicio de cambio de fotos restaurante en movimiento--*/
+.slider {
+    width: 40%;
+    margin: 3%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/*--final de cambio de fotos restaurante en movimiento--*/
